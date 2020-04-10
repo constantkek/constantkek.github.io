@@ -1,0 +1,157 @@
+<html>
+<head>
+    <style>
+        body {
+            background: #343434;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader {
+            width: 175px;
+            height: 175px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader-text {
+            font-family: sans-serif;
+            font-size: 36px;
+            color: #f7d8b5;
+            margin-top: 70px;
+        }
+
+        .loader-elem {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+            background: #ccc;
+        }
+
+        .dot-1 {
+            left: calc(100% - 25px);
+            background-color: #e57853;
+            animation: 2s ease-in-out infinite movedot1;
+        }
+
+        .dot-2 {
+            background-color: #f1e5d6;
+            animation: 2s ease-in-out infinite movedot2;
+        }
+
+        .dot-3 {
+            right: calc(100% - 25px);
+            background-color: #a43a4b;
+            animation: 2s ease-in-out infinite movedot3;
+        }
+
+        @keyframes movedot1 {
+            0% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            20% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            40% {
+                transform: translateY(-600%);
+                border-radius: 50%;
+            }
+
+            60% {
+                transform: translateY(-350%);
+                border-radius: 25%;
+            }
+
+            80% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            100% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+        }
+
+        @keyframes movedot2 {
+            0% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            20% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            40% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            60% {
+                transform: translateY(-600%);
+                border-radius: 50%;
+            }
+
+            80% {
+                transform: translateY(-350%);
+                border-radius: 25%;
+            }
+
+            100% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+        }
+
+        @keyframes movedot3 {
+            0% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            20% {
+                transform: translateY(-600%);
+                border-radius: 50%;
+            }
+
+            40% {
+                transform: translateY(-600%);
+                border-radius: 50%;
+            }
+
+            60% {
+                transform: translateY(-350%);
+                border-radius: 25%;
+            }
+
+            80% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+
+            100% {
+                transform: translateY(-100%);
+                border-radius: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="loader">
+    <span class="loader-text">LOADING</span>
+    <div class="loader-elem dot-1"></div>
+    <div class="loader-elem dot-2"></div>
+    <div class="loader-elem dot-3"></div>
+</div>
+</body>
+</html>
